@@ -8,7 +8,7 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException, BackgroundTasks
 from pydantic import BaseModel, HttpUrl
 
-from retriever.unified_retriever import index_repository, query_code
+from retriever.use_rag_index import index_repository, query_code
 from qa_interface import CodeQAInterface
 
 logger = logging.getLogger(__name__)

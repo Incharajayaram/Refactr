@@ -2,7 +2,7 @@ import sys
 import os
 from typing import List, Optional
 import logging
-from retriever.unified_retriever import query_code, index_code
+from retriever.use_rag_index import query_code, index_code
 import json
 import requests
 from dotenv import load_dotenv
