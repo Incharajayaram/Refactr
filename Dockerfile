@@ -10,9 +10,12 @@ RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
     make \
-    nodejs \
-    npm \
     && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js (minimal, just runtime)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs --no-install-recommends && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
