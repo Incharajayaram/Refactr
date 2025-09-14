@@ -51,10 +51,3 @@ ENV ALLOW_OTHER_DOMAINS=false
 
 # Run the application (use PORT env variable)
 CMD uvicorn webapp.app:app --host 0.0.0.0 --port $PORT
-
-# Example build and run commands:
-# docker build -f docker/Dockerfile -t code-quality-agent .
-# docker run -p 8080:8080 -e GITHUB_TOKEN=your_token code-quality-agent
-
-# For development with volume mounting:
-# docker run -p 8080:8080 -v $(pwd):/app -e GITHUB_TOKEN=your_token code-quality-agent

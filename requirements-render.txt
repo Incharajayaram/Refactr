@@ -1,0 +1,43 @@
+# Render-compatible requirements (no compilation needed)
+
+# Core dependencies
+typer==0.12.3
+radon==6.0.1
+python-dotenv==1.0.0
+
+# AI/LLM dependencies
+openai==1.40.0
+anthropic>=0.18.0
+
+# Web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# Git integration
+GitPython==3.1.40
+requests==2.31.0
+
+# Code analysis (without compilation)
+pylint==3.0.3
+bandit==1.7.5
+isort==5.13.2
+
+# Visualization (web-compatible only)
+plotly==5.18.0
+
+# PDF generation (lightweight)
+fpdf2==2.7.6
+
+# Utilities
+tqdm==4.66.1
+
+# JSON handling
+jsonschema==4.20.0
+
+# Note: Advanced features temporarily disabled for Render deployment
+# - RAG/embeddings (requires faiss-cpu, torch, sentence-transformers)
+# - Advanced visualizations (requires matplotlib, seaborn, networkx)
+# - System monitoring (requires psutil)
+# These can be added once basic deployment works
