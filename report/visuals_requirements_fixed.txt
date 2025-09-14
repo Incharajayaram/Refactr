@@ -1,0 +1,15 @@
+# Visualization dependencies - simplified for compatibility
+networkx>=3.0
+matplotlib>=3.7.0
+# Skip pandas for now due to build issues on Windows/Python 3.13
+# Use numpy arrays directly instead
+seaborn>=0.12.0
+numpy>=1.24.3,<2.0.0
+
+# Optional interactive visualizations
+plotly>=5.0.0  # For interactive charts
+# pyvis>=0.3.0  # Skip for now
+
+# Note: For Windows users with Python 3.13, some packages may need:
+# 1. Visual Studio Build Tools
+# 2. Pre-built wheels from https://www.lfd.uci.edu/~gohlke/pythonlibs/

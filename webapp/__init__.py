@@ -1,0 +1,1 @@
+# web application package for Code Quality Intelligence Agent

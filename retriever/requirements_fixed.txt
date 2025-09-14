@@ -1,0 +1,13 @@
+# Core dependencies for embeddings and search
+sentence-transformers>=2.2.2
+faiss-cpu==1.12.0  # Match the already installed version
+numpy>=1.24.3,<2.0.0  # Compatible version
+torch>=2.0.1
+
+# Additional dependencies for RAG indexer
+tqdm>=4.66.1  # Progress bars
+# python-magic==0.4.27  # Optional: skip for now due to Windows issues
+# python-magic-bin==0.4.14  # Windows support for python-magic
+
+# Database for metadata storage
+# SQLite3 is included in Python standard library

@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+work/
+index/
+*.db
+*.pkl
+*.faiss
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test files
+test_*.py
+*_test.py
+*_backup.py
+*_old.py
+*_fixed.py
+*_issue.py
+qa_interface_*.py
+!qa_interface.py
+
+# Unused/Old files
+test_ollama.py
+test_anthropic*.py
+test_proxy_issue.py
+test_no_api*.py
+langgraph_workflow.py
+demo_app.py
+codesys.md
+notes.md
+
+# Documentation builds
+docs/_build/
+*.pdf
+!documentation.pdf
+
+# Reports and outputs
+reports/
+outputs/
+*.html
+!webapp/templates/*.html
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+tmp/
+
+# Package files
+dist/
+build/
+*.egg-info/

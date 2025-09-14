@@ -1,0 +1,25 @@
+# Visualization dependencies for Code Quality Intelligence Agent
+
+# Core visualization libraries
+networkx==3.2.1
+matplotlib==3.8.2
+pandas==2.1.4
+seaborn==0.13.1
+numpy==1.26.3
+
+# Graph visualization
+# Note: pygraphviz requires system-level graphviz installation
+# On Ubuntu/Debian: sudo apt-get install graphviz graphviz-dev
+# On macOS: brew install graphviz
+# pygraphviz==1.12  # Uncomment if graphviz is installed
+
+# Optional interactive visualizations
+plotly==5.18.0  # For interactive charts
+pyvis==0.3.2    # For interactive network graphs
+
+# Database for historical metrics
+# SQLite3 is included in Python standard library
+
+# JavaScript AST parsing dependencies (for js_ast_parser.js)
+# These need to be installed via npm in the analyzers directory:
+# cd analyzers && npm install @babel/parser @babel/traverse

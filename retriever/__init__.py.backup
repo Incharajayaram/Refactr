@@ -1,0 +1,7 @@
+"""
+Retriever module for offline RAG-based code Q&A.
+"""
+
+from .embeddings import index_code, query_code, CodeEmbeddingSystem
+
+__all__ = ['index_code', 'query_code', 'CodeEmbeddingSystem']

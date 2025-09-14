@@ -1,0 +1,16 @@
+typer==0.12.3
+radon==6.0.1
+openai==1.40.0
+anthropic>=0.18.0
+faiss-cpu==1.12.0
+langgraph
+
+# PDF generation alternatives (install one of these):
+# Option 1: Simple and lightweight
+fpdf2==2.7.6
+
+# Option 2: More features but larger
+reportlab==4.0.7
+
+# Option 3: WeasyPrint (requires GTK on Windows - complex)
+# weasyprint==60.1
