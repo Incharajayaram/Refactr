@@ -80,6 +80,8 @@ class AnalyzeResponse(BaseModel):
 async def lifespan(app: FastAPI):
     """Lifecycle manager for the FastAPI app."""
     # startup: Load existing job metadata
+    port = os.getenv('PORT', '8080')
+    logger.info(f"Starting app on port {port}...")
     logger.info("Loading existing job metadata...")
     for meta_file in JOBS_META_DIR.glob("*.json"):
         try:
@@ -125,6 +127,9 @@ app.add_middleware(
 app.include_router(qa_router)
 app.include_router(webhook_router)
 app.include_router(qa_ui_router)
+
+# Log startup info
+logger.info(f"FastAPI app initialized. Running on port: {os.getenv('PORT', '8080')}")
 
 
 def cleanup_old_jobs():
