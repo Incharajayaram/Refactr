@@ -4,49 +4,66 @@ __pycache__/
 *$py.class
 *.so
 .Python
-venv/
 env/
+venv/
 ENV/
 .venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+*.egg-info/
+.eggs/
+
+# Testing
+.coverage
+.pytest_cache
+htmlcov/
+.tox/
+.coverage.*
+*.cover
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+work/
+reports/
+*.log
+*.db
+*.sqlite
+*.sqlite3
 
 # Git
 .git/
 .gitignore
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Project specific
-work/
-index/
-*.log
-.env
-.env.*
-!.env.example
-
-# Tests
-.pytest_cache/
-.coverage
-htmlcov/
-
 # Documentation
 *.md
 docs/
+README*
 
-# Build artifacts
-build/
-dist/
-*.egg-info/
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
 
-# OS
-.DS_Store
-Thumbs.db
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
 
 # Temporary files
-*.tmp
-*.temp
 tmp/
 temp/
+*.tmp
+*.temp
+
+# Node (if any)
+node_modules/
+package-lock.json
+yarn.lock
