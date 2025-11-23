@@ -71,3 +71,4 @@ tmp/
 dist/
 build/
 *.egg-info/
+*env-vars.yaml
