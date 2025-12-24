@@ -2,7 +2,7 @@
 
 Refactr is an intelligent code quality analysis tool that leverages AI to provide comprehensive insights into your codebase. It supports multiple programming languages and offers both CLI and web interfaces for seamless integration into your development workflow.
 
-## 🚀 Features
+##  Features
 
 - **Multi-Language Support**: Analyzes Python and JavaScript/TypeScript codebases
 - **AI-Powered Q&A**: Interactive chat interface using Claude AI for code understanding
@@ -18,13 +18,13 @@ Refactr is an intelligent code quality analysis tool that leverages AI to provid
 - **Report Generation**: Multiple formats (JSON, HTML, PDF)
 - **Real-time Analysis**: Webhook support for GitHub/GitLab integration
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.8 or higher
 - Git
 - 4GB+ RAM recommended for large repositories
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository**
 ```bash
@@ -59,7 +59,7 @@ Edit `.env` and add your API key:
 ANTHROPIC_API_KEY=your_claude_api_key_here
 ```
 
-## 🎯 Usage
+## Usage
 
 ### CLI Interface
 
@@ -108,7 +108,7 @@ Example questions:
 - "What are the main security concerns in this code?"
 - "Explain the data flow in the payment module"
 
-## 📊 Analysis Metrics
+## Analysis Metrics
 
 Refactr analyzes your code across multiple dimensions:
 
@@ -130,14 +130,14 @@ Refactr analyzes your code across multiple dimensions:
 - **File organization**
 - **Documentation coverage**
 
-## 🎨 Visualizations
+## Visualizations
 
 Refactr generates interactive visualizations:
 - **Dependency Graph**: Module relationships
 - **Quality Heatmap**: File-level quality metrics
 - **Issue Distribution**: Issues by type and severity
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -155,7 +155,7 @@ Customize analysis rules in `analyzers/rules/`:
 - `js_rules.yaml` - JavaScript rules
 - `security_rules.yaml` - Security patterns
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 refactr/
@@ -167,7 +167,7 @@ refactr/
 └── visualizations/     # Chart generation
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -175,11 +175,11 @@ refactr/
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Anthropic Claude for AI capabilities
 - FastAPI for web framework
